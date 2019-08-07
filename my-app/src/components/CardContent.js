@@ -1,5 +1,6 @@
 import React from 'react'
 import axios from 'axios'
+import 'semantic-ui-css/semantic.min.css'
 import { Segment, Card, Image } from 'semantic-ui-react'
 
 
@@ -32,6 +33,9 @@ class CardContent extends React.Component {
                                 </Card.Header>
                                 <Card.Meta>{e.html_url}</Card.Meta>
                                 <Card.Description>Site Type: {e.type}</Card.Description>
+                                <Card.Meta>Location: {e.location}</Card.Meta>
+                                <Card.Meta>Following: {e.following}</Card.Meta>
+                                <Card.Description>Created at: {e.created_at}</Card.Description>
                             </Card.Content>
                         </Card>
                     </Segment >)
